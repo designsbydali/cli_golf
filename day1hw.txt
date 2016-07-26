@@ -1,0 +1,199 @@
+Last login: Mon Jul 25 17:09:32 on ttys000
+designsbydali ~
+$ cd code
+designsbydali ~/code
+$ ls
+kitchen/  wdi/
+designsbydali ~/code
+$ cd kitchen
+designsbydali ~/code/kitchen
+$ mkdir sink
+gmkdir: created directory 'sink'
+designsbydali ~/code/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/
+designsbydali ~/code/kitchen
+$ mkdir trashcan
+gmkdir: created directory 'trashcan'
+designsbydali ~/code/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ mv cans.txt ~/code/kitchen/pantry/
+'cans.txt' -> '/Users/designsbydali/code/kitchen/pantry/cans.txt'
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ cd pantry
+designsbydali ~/code/kitchen/pantry
+$ mv crisper-drawer/ ~/code/kitchen/fridge/
+'crisper-drawer/' -> '/Users/designsbydali/code/kitchen/fridge/crisper-drawer'
+designsbydali ~/code/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+designsbydali ~/code/kitchen/pantry
+$ cd ..
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ cd fridge
+designsbydali ~/code/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+designsbydali ~/code/kitchen/fridge
+$ cd crisper-drawer/
+designsbydali ~/code/kitchen/fridge/crisper-drawer
+$ ls
+lettuce.txt
+designsbydali ~/code/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+designsbydali ~/code/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+designsbydali ~/code/kitchen/fridge/crisper-drawer
+$ cd ..
+designsbydali ~/code/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+designsbydali ~/code/kitchen/fridge
+$ cd freezer
+designsbydali ~/code/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+designsbydali ~/code/kitchen/fridge/freezer
+$ rm couch.txt 
+removed 'couch.txt'
+designsbydali ~/code/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+designsbydali ~/code/kitchen/fridge/freezer
+$ cd ..
+designsbydali ~/code/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+designsbydali ~/code/kitchen/fridge
+$ rm diapers.txt 
+removed 'diapers.txt'
+designsbydali ~/code/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt  trashcan/
+designsbydali ~/code/kitchen/fridge
+$ rm trashcan/
+grm: cannot remove 'trashcan/': Is a directory
+designsbydali ~/code/kitchen/fridge
+$ rmdir trashcan/
+rmdir: trashcan/: Directory not empty
+designsbydali ~/code/kitchen/fridge
+$ cd ..
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ rmdir trashcan/
+designsbydali ~/code/kitchen
+$ cd fridge/
+designsbydali ~/code/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt  trashcan/
+designsbydali ~/code/kitchen/fridge
+$ mv trashcan/ ~/code/kitchen/
+'trashcan/' -> '/Users/designsbydali/code/kitchen/trashcan'
+designsbydali ~/code/kitchen/fridge
+$ cd ..
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ cd trashcan/
+designsbydali ~/code/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+designsbydali ~/code/kitchen/trashcan
+$ cd ..
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ rm sink/
+grm: cannot remove 'sink/': Is a directory
+designsbydali ~/code/kitchen
+$ rmdir sink/
+designsbydali ~/code/kitchen
+$ cd trashcan/
+designsbydali ~/code/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+designsbydali ~/code/kitchen/trashcan
+$ mv sink/ ~/code/kitchen/
+'sink/' -> '/Users/designsbydali/code/kitchen/sink'
+designsbydali ~/code/kitchen/trashcan
+$ cd ..
+designsbydali ~/code/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+designsbydali ~/code/kitchen
+$ cd pantry/
+designsbydali ~/code/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+designsbydali ~/code/kitchen/pantry
+$ cd ..
+designsbydali ~/code/kitchen
+$ cd sink
+designsbydali ~/code/kitchen/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+designsbydali ~/code/kitchen/sink
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+designsbydali ~/code/kitchen/sink
+$ rm delete-me.txt 
+removed 'delete-me.txt'
+designsbydali ~/code/kitchen/sink
+$ rm clean-dishes.txt 
+removed 'clean-dishes.txt'
+designsbydali ~/code/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+designsbydali ~/code/kitchen/sink
+$ cd drying-rack/
+designsbydali ~/code/kitchen/sink/drying-rack
+$ touch clean-dishes.txt
+designsbydali ~/code/kitchen/sink/drying-rack
+$ ls
+clean-dishes.txt
+designsbydali ~/code/kitchen/sink/drying-rack
+$ cd ..
+designsbydali ~/code/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+designsbydali ~/code/kitchen/sink
+$ cd ..
+designsbydali ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+designsbydali ~/code/kitchen
+$ 
